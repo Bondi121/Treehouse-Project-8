@@ -33,7 +33,7 @@ def clean_runtime(input_time):
 def get_movie_data(csv_file):
     with open(csv_file, 'r') as f:
         reader = csv.reader(f)
-        header = next(reader)  # Skip header row
+        header = next(reader)
         data = []
         for row in reader:
             title = row[0]
